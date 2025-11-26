@@ -10,16 +10,14 @@ class Ship{
     }
 
     isSunk(){
-        return this.hits>=this.length?this.sunk=true:this.sunk=false;
+        this.sunk = this.hits >= this.length;
+        return this.sunk;
     }
 
 
 
 }
 
-// let titanik=new Ship(3);
-// titanik.hit();
-// titanik.hit();
-// titanik.hit();
-// console.log(titanik.isSunk());
+module.exports=Ship;
+
 
