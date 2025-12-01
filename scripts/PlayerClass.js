@@ -19,7 +19,7 @@ class Player{
     }
 }
 
-class HumanPlayer extends Player{
+export class HumanPlayer extends Player{
     constructor(name){
         super(name,'human');
     }
@@ -30,7 +30,7 @@ class HumanPlayer extends Player{
     }
 }
 
-class computerPlayer extends Player{
+export class computerPlayer extends Player{
     constructor(){
         super('Computer','computer')
         this.avaibleMoves=this.generateAllMoves();
